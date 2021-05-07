@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+
+
+<category>
+<pattern>new HIV <set>country</set></pattern>
+<template>
+  <map name="newhiv"><star /></map> people get HIV in <star /> each year.
+</template>
+</category>
+
+<category>
+<pattern>on ART <set>country</set></pattern>
+<template>
+  <map name="onart"><star /></map> people with HIV out of 100 get ART treatment in <star /> each year.
+</template>
+</category>
+
+<category>
+<pattern>kids hiv <set>country</set></pattern>
+<template>
+  <map name="kidshiv"><star /></map> children have HIV in <star />.
+</template>
+</category>
+
+<category>
+<pattern><set>country</set></pattern>
+<template>
+   
+      <map name="onart"><star /></map> people with HIV out of 100 get ART treatment in <star /> each year. 
+  <map name="newhiv"><star /></map> people get HIV in <star /> each year. 
+   <map name="kidshiv"><star /></map> children have HIV in <star />.
+   
+   <link>
+       <text>UNAIDS</text>
+       <url>https://www.unaids.org/en/regionscountries/countries/<star /></url>
+   </link>
+</template>
+</category>
+
+</aiml>
